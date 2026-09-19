@@ -11,7 +11,6 @@ import numpy as np
 caminho_imagem = "img/Entrada.png"
 
 #leitura da imagem
-caminho_imagem = "img/Entrada.png"
 imOriginal = cv2.imread(caminho_imagem, 0)
 #Define o elemento estruturante que vai utilizar
 eEstruturante = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3,3))
