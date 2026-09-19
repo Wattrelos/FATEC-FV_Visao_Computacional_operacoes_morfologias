@@ -3,7 +3,8 @@
 import cv2
 
 # Leitura da imagem
-caminho = r"C:/Users/Aluno/Desktop/aula05testeMorfologia.bmp"
+# caminho = "C:/Users/Aluno/Desktop/aula05testeMorfologia.bmp"
+caminho = "img/modelo.jpeg"
 imOriginal = cv2.imread(caminho, 0)
 
 # Verificacao para evitar erro caso a imagem nao seja encontrada
