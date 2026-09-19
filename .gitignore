@@ -1,0 +1,35 @@
+# Ambientes virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDEs e editores de código
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+.cache/
+
+# Distribuição e empacotamento
+build/
+dist/
+*.egg-info/
