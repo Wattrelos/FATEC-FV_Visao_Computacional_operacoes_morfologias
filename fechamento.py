@@ -1,22 +1,14 @@
-# Abertura, erosão seguida de dilatação
-
-# Configura o backend gráfico do Qt para XCB (evita avisos no Linux Wayland)
-os.environ.setdefault("QT_QPA_PLATFORM", "xcb")
-
 #importação da biblioteca
 import cv2
 import numpy as np
-
-#caminho da imagem
-caminho_imagem = "img/Entrada.png"
-
+# Caminho da imagem
+caminho_imagem = "img/images.png"
 #leitura da imagem
-caminho_imagem = "img/Entrada.png"
 imOriginal = cv2.imread(caminho_imagem, 0)
 #Define o elemento estruturante que vai utilizar
 eEstruturante = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3,3))
 #executa a função que aplica o operador morfológico
-imProc = cv2.morphologyEx(imOriginal, cv2.MORPH_OPEN, eEstruturante)
+imProc = cv2.morphologyEx(imOriginal, cv2.MORPH_CLOSE, eEstruturante)
 #mostra as imagens original e processada usando o método imShow
 cv2.imshow("Imagem original", imOriginal)
 cv2.imshow("Imagem processada", imProc)
